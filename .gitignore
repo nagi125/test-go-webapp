@@ -1,0 +1,19 @@
+# MacOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE
+.idea
+
+# docker data
+.docker-sync
+.docker/db/data/*
+.docker/redis/data/*
+
+vendor/*
+
+!.gitkeep
+
+# Air
+src/tmp/*
