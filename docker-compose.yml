@@ -5,6 +5,12 @@ services:
     build:
       context: .docker/go
       dockerfile: Dockerfile
+    environment:
+      PORT: '8080'
     volumes:
       - ./src/:/go/src/app
+    ports:
+      - 8080:8080
     tty: true
+    command: go run main.go
+
